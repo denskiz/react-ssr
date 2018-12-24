@@ -1,10 +1,12 @@
+// Runs Webpack on the server side code
+
 const path = require('path');
 const merge = require('webpack-merge');
 const baseConfig = require('./webpack.base.js');
 const webpackNodeExternals = require('webpack-node-externals');
 
 const config = {
-  //  Inform wepback that we're building a bundle
+  //  Inform webpack that we're building a bundle
   // for nodeJS, rather than for the browser
   target: 'node',
 
